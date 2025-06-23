@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  padding-top: 16vh;
+}
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-logo {
+  width: 100px;
+}
+.navbar {
+  background-color: rgb(214, 214, 214) !important;
+  padding-left: 50px;
+}
+.navbar-nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.nav-link:hover {
+  color: rgb(255, 9, 9);
+  font-size: 22px;
+}
+.btn:hover {
+  background-color: green;
+  border: 0;
+}
+
+.logo-nome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: arial;
+  padding-top: 40px;
+  h1 {
+    font-weight: bold;
+    color: red;
+  }
+  h3 {
+    font-family: arial;
+    font-weight: bold;
+  }
+}
+footer {
+  .container {
+    display: flex;
+    justify-content: center;
+    img {
+      margin-right: auto;
+    }
+  }
+  background-color: rgb(214, 214, 214);
+  .menu-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: arial;
+    padding-top: 20px;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    h3 {
+      font-weight: bold;
+    }
+    a:hover {
+      color: red;
+    }
+    .local {
+      list-style: none;
+      font-family: arial;
+    }
+  }
+  iframe {
+    box-shadow: 0px 0px 5px red;
+  }
+  .social {
+    li {
+      list-style: none;
+    }
+  }
+}
+footer a:hover {
+  color: #ffc107 !important; /* amarelo Bootstrap */
+  text-decoration: underline;
+  transform: translateX(5px);
+}
+
+.custom-carousel-img {
+  height: 400px; /* ou ajuste conforme desejado */
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-img-sm {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+/* Transições suaves gerais */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar hover */
+.nav-link:hover {
+  color: #dc3545 !important; /* vermelho */
+  transform: scale(1.05);
+}
+
+/* Botão com transição */
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagens com zoom leve */
+img.img-fluid {
+  transition: transform 0.5s ease;
+}
+
+img.img-fluid:hover {
+  transform: scale(1.03);
+}
+
+/* Carousel - legenda */
+.carousel-caption {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-caption:hover {
+  transform: scale(1.02);
+}
+
+/* Links no footer */
+footer a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107 !important; /* amarelo */
+  text-decoration: underline;
+  transform: translateX(5px);
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107 !important;
+  /* amarelo Bootstrap */
+  text-decoration: underline;
+  transform: translateX(5px);
+}
+footer {
+  position: absolute;
+  width: 100%;
+  margin-top: 26px;
+}
+
+/* Para telas menores */
+@media (max-width: 768px) {
+  .carousel-img-sm {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-img-sm {
+    height: 160px;
+  }
+}
+
+.carrossel .carousel-item img {
+  margin: 0 auto; /* centraliza imagem */
+}
+
+@media (max-width: 1300px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  footer {
+    .container {
+      display: flex;
+      justify-content: center;
+      img {
+        margin-right: auto;
+      }
+    }
+    background-color: rgb(214, 214, 214);
+    img {
+      display: none;
+    }
+    .menu-footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu {
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      font-family: arial;
+      padding-top: 20px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      h3 {
+        font-weight: bold;
+      }
+      a:hover {
+        color: red;
+      }
+      .local {
+        list-style: none;
+        font-family: arial;
+      }
+    }
+    iframe {
+      box-shadow: 0px 0px 5px red;
+    }
+    .social {
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    padding-top: 18vh;
+  }
+}
